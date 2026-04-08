@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                var fees={Rahul:100,Sumit:200};
+                console.log(fees);
+                document.write(fees.Rahul+" "+fees.Sumit+"<br>");
+                //added property dynamincally
+                fees.Sonam=600;//fees.['Sonam']=600;
+                document.write(fees.Sonam+" "+fees.Rahul+" "+fees.Sumit+"<br>");
+                //addes method dynamically
+              fees.show=function(){};
+              document.write(fees);
+              
+              document.write("<hr>");
+              var fees={Rahul:100,Sumit:200};
+               document.write(fees.Rahul+" "+fees.Sumit+"<br>");
+              delete fees.Rahul;
+              document.write(fees.Rahul+" "+fees.Sumit);
+              console.log(fees);
+              //one object laptop declear propertys and method,and disply that boj 
+              //one property and method 
+</script>
+        </body>
+    </head>
+</html>

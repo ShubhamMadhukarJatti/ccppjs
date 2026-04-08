@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <body>
+            <script>
+                //accessible from anywhere
+                var i="I am global Varible";//Global Variable
+                document.write(i+"<br/>");
+
+                function show(){
+                    //var i=30;
+                    document.write("in show()"+i+"<br>");
+                    //accessible in fumction
+                }
+                show();
+                document.write(i+"<br>");//accessible outside
+
+                function disp(){
+document.write("in disp()"+i+"<br>");
+//accessible in function
+                }
+                disp();
+                if(true){
+                    document.write("in if "+i+"<br>");
+                    //acessible in block
+                }
+                function print(){
+                    var x=23;
+                    document.write(x+"<br>");
+                }
+                print();
+                document.write(x="<br>");
+            </script>
+        </body>
+    </head>
+</html>

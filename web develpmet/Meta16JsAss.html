@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                /*1.Remove all number and special charater from string
+                var str="bi23i$c3ode";*/
+               var str="bi23i$c3ode";
+               document.write(str.substring(0,2));
+               document.write(str.charAt(4));
+               document.write(str.charAt(6));
+               document.write(str.substring(8,11));
+                document.write("<hr>");
+                /*2.Count number of vowels in the string
+                var str="Javascript";//vowels=a,e,i,o,u,A,E,I,O,U*/
+            function vowel_count(str1)
+            {
+                var vowel_list='aeiouAEIOU';
+                var vcount=0;
+
+                for(var x=0;x<str1.length;x++){
+                    if(vowel_list.indexOf(str1[x])!== -1)
+                    {
+                        vcount +=1;
+                    }
+                }
+                return vcount;
+            }
+            console.log(vowel_count("Javascript"));
+            /*3.Check whether string is palindron or not;
+            var str="madam";*/
+           function checkPalindrome(str){
+               const len=string.lenght;
+               for(let i=0;i<len/2;i++){
+             if(string[i] !==string[len -1 -i]){
+                 return 'It is not palindrome';
+             }
+               }
+               return 'It is a palindrome';
+           }
+const string=prompt('Enter a string:');
+const value=checkPalindrome(string);
+
+console.log(value);
+            </script>
+        </body>
+    </head>
+</html>

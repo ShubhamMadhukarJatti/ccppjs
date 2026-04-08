@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                //Q2.Create car class inherit Maruti,Honda,from Car class n class properties.
+                class Car{
+            showCar(){
+                return "Car Brend <br>";
+            }
+                }
+          class Maruti extends Car{
+          showMCar(){
+              return "Swift<br>";
+          }
+          }
+          class Honda extends Maruti{
+              showHCar(){
+                  return "sentro<br>";
+              }
+          }
+          var n=new Honda();
+          document.write(n.showCar());
+          document.write(n.showMCar());
+          document.write(n.showHCar());
+            </script>
+        </body>
+    </head>
+</html>

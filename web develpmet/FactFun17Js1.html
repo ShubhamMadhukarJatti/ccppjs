@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+               /* function mobile(model_no){
+                    return{
+                        model:model_no,
+                        price:function(){
+                            return"Price is Rs.3000";
+                        }
+                    };
+                }
+                var samsung=mobile('gakaxy');
+                var nokia=mobile('3310');
+                document.write(samsung.model+" "+samsung.price()+"<br>");
+                document.write(nokia.model+" "+nokia.price());*/
+                function Car(model_no){
+                    return{
+                        model:model_no,
+                        price:function(){
+                            return "Price is Rs.750000";
+                        }
+                    };
+                }
+                var Hyundai=Car('Aura');
+                var Maruti=Car('550000');
+                document.write(Hyundai.model+" "+Hyundai.price()+"<br>");
+                document.write(Maruti.model+" "+Maruti.price());
+            </script>
+        </body>
+    </head>
+</html>

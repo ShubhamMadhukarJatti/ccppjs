@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                var person=new Object();
+                var person={};
+         Object.defineProperty(person,"Name",{
+             writable:false,/*false-then does not change name,we
+             can not reasign value*/
+             value:"bitcode",
+             configurable:false,//if it is false then does not delete or modifiy
+             enumerable:false//if it is false then it can not perform for in loop
+ });
+ alert(person.name);
+ person.name="Jay Hunuman";
+ alert(person.name);
+ delete person.name;
+ alert(person.name);
+ for(prop in person){
+     alert(prop);
+ }
+            </script>
+        </body>
+    </head>
+</html>

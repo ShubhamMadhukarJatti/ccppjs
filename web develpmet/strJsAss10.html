@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            
+                //display array in an asccending & desceding order 
+                <p>click the button to sort the array in asccending order</p>
+                <button onclick="myfuntion()">Try it</button>
+                <p  id="demo"></p>
+ <script>
+     /*
+var arr=[31,29,41,91,11];
+document.getElementId("demo").innerHtML=arr;
+
+function myfuntion(){
+    arr.sort(function(a,b){return a-b});
+    document.getElementById("demo").innerHTML=arr;
+}*/
+var arr=[31,29,41,91,11];
+document.getElementById("demo").innerHTML=arr;
+
+function myfuntion(){
+    arr.sort(function(a,b){return b-a});
+    document.getElementById("demo").innerHTML=arr;
+}
+
+            </script>
+        </body>
+    </head>
+</html>

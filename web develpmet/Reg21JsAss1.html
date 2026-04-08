@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+             /*   function bubbleSort(array){
+                    var done=false;
+                    while(!done){
+                        for(var i=1;i<array.length;i+=1){
+                            if(array[i-1]>array[i]){
+                                done=false;
+                                var tmp=array[i-1];
+                                array[i-1]=array[i];
+                                array[i]=tmp;
+                            }
+                        }
+                    }
+                    return array;
+                }*/
+                
+                var employee =[]
+                employee[0]={name:"sachin",age:35,city:"pune"}
+                employee[1]={name:"virat",age:30,city:"mumbai"}
+               employee[2]= {name:"ashivni",age:40,city:"banglor"}
+               employee[3]= { name:"rohan",age:18,city:"thane"}
+               /* bubbleSort(employee)
+           // var numbers = [12, 10, 15, 11, 14, 13, 16];
+bubbleSort(numbers);
+console.log(numbers);*/
+employee.sort(function(a,b){
+                    return a.age-b.age
+                })
+                employee.sort(function(a,b){
+                    var nameA=a.name.toLowerCase(),nameB=b.name.toLowerCase()
+                    if(nameA<nameB)
+                    return -1
+                    if(nameA>nameB)
+                    return 1
+                    return 0
+                })
+                employee.sort(function(a,b){
+                    var dateA=new Date(a.retiredate),dateB=new Date(b.retiredate)
+return dateA-dateB
+                })
+            </script>
+        </body>
+    </head>
+</html>

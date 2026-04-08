@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                var a=10;
+                function outerFun(){
+                    var j="J a Local vari of outer Function";
+                    document.write(j+"<br>");
+                    function innerFun(){
+                        var k="k a Local vari of inner fun";
+                        var c=a+j+k;
+                        document.write(k+"<br>");
+                        document.write(j+"<br>");
+
+                    }
+                    innerFun();
+                    document.write(j+"<br>");
+
+                }
+                outerFun();
+            </script>
+        </body>
+    </head>
+</html>

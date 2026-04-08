@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">I am Para</p>
+    <h1 class="myh1">I am H1</h1>
+    <div id="mydiv">
+        <span class="myspan">Hello</span>
+    </div>
+    <p class="mah1 para">I am para2</p>
+    <h2 class="myh1">I am H2</h2>
+    <script>
+        var getSpan=document.getElementById("myp");
+        var result=getSpan.getElementsByTagName("span");
+        var result=document.getElementsByClassName("myspan")
+        document.getElementById("myp").getElementsByTagName("span");
+        document.write(result);
+        console.log(result);
+        </script>
+</body>
+</html>

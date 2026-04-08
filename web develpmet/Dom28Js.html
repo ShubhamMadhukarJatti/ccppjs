@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <title>Tree</title>
+</head>
+<body>
+    <h1>We are Learing JS</h1>
+    <h1>Hello World</h1>
+    <h2>Now</h2>
+    <p id="para">Hello<span>World</span> <em>World</em> <span>JS</span>
+    </p> 
+    <p id="find"><span>Bye</span>World</p>
+    <div>
+        <p>1st p inside div</p>
+        <p>2nd p inside div</p>
+    </div>
+    <script>
+        //more specific
+        var getSpan =document.getElementById("para");
+        var result=getSpan.getElementsByTagName("Span");
+        //var result=
+        document.getElementById("para").getElementsByTagName("span");
+        document.write(result);
+        console.log(result);
+    </script>
+</body>
+</html>

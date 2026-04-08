@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Form</title>
+    </head>
+    <body>
+        <form>
+            First Name:<input type="text" name="abc" placeholder="Name" autofocus/><br/>
+            Last Name:<input type="text" name="abc" placeholder="SurName" autofocus/><br/>
+
+            Gender<br/>Male:<input type="radio" name="gender" value="male"checked><br/>
+
+            Female:<input type="radio" name="gender" value="Female"checked><br/>
+            
+            <textarea name="message" rows="10" cols="20">
+                    Text message
+            </textarea><br/>
+            <button type="button">
+                Click Me!
+            <button><br/><br/>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+            First Name:<br/>
+            <input type="text" name="first name" value="mickey"><br/><br/>
+            Last Name:<br/>
+            <input type="text"name="last name"value="mouse"><br/><br/>
+            <input type="Submit"value="Submit">
+                </fieldset><br/><br/>
+
+                <h1>Dropdown</h1>
+                <select name="Cars">
+                    <option value="">Select Option</option>
+                    <option value="Car">Cars</option>
+                    <option value="audi">Audi</option>
+                    <option>BMW</option>
+                    <option>Fiat</option>
+                    <option>Bugatti</option>
+                </select>
+
+                <h1>Datalist</h1>
+                <input list="browsers"id="#browsers"/>
+                <datalist id="browsers"/>
+                <option value="java"/>
+                <option value="IE"/>
+                <option value="IE"/>
+            </datalist>
+
+            <h1>Password</h1>
+            Password:
+            <input type="password" name="psw"><br/><br/>
+
+            <h1>Checkbox</h1>
+            <input type="checkbox" name="vehicle 1" value="bike" checked/>Bike<br>
+            <input type="checkbox" name="vehicle 2" value="Car" />Car<br>
+
+            <h1>Quantity</h1>
+            <input type="number"
+            name="Quantity"
+            min="1"
+            max="5"/><br/>
+
+            <h1>Birthday</h1>
+            <input type="data" name="bday"/><br/>
+
+            <h1>Select Your Favrouit Color</h1>
+            <input type="Color"name="fcolor"/><br/>
+
+            <h1>Range</h1>
+        0<input type="range"
+        name="points"
+        min="0"
+        max="10"/>10<br/>
+
+        <h1>Email</h1>
+        <input type="email"name=""/><br/>
+
+        <h1>Add url homepage</h1>
+        <input type="url"name="homepage"><br/>
+
+        <h1>Readonly</h1>
+        First Name:<input type="text" name="first name" value="John" 
+        readonly size="20"/><br/>
+
+        <h1>Disabled</h1>
+        First Name:<input type="text" name="first name" value="John"
+        size="10" disabled/><br/>
+
+        <h1>Maxlenght of word or digit</h1>
+        First Name:<input type="text" name="first name" value="Jhon"
+        maxlength="10"/><br/>
+
+        <h1>Reqired</h1>
+        First Name:<input type="text" name="first name" value="Jhon"
+        required/><br/>
+
+        <h1>with Value</h1>
+        <input type="submit" value="Done"/><br/>
+</form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                //Splice Method
+                var  arr=["Rahul","Sonam","Sumit","Raj","Rohan"];
+                document.write(arr="<br/>");
+                //slice method
+                document.write(arr.slice(0,3)+"<br/>");
+
+                //Remove All elements from index 2 (including index 2)
+                arr.splice(2,2);
+                document.write(arr+"<br/>");//modifies original array
+
+                //Remove 1 element from index 2
+                //it will remove index 2 element
+                arr.splice(2,1);
+                document.write(arr);
+
+                //Remove 2 elements from index 2
+                //it will remove index 2 and 3, element
+                arr.splice(2,2);
+                document.write(arr);
+
+                //Remove 0 element from index 2 and insert "Dell"
+                //it will not remove anything but will insert "Dell"at posistion 2
+                arr.splice(2,0,"Dell");
+                document.write(arr);
+
+            //Remove 2 elements from index 2 and insert "Dell"and "Hp"
+            arr.splice(2,1,"Dell","Hp");
+            document.write(arr);
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                /*indexOf Method The indexOf() method returns the position of the first occurre
+                 a specified value in a string.
+                  This method returns -1 if the value to search for never occurs */
+                  var str="Hello friends how are you";
+                  document.write(str.indexOf("e"));//1 give first ocurance only
+                  document.write("<br>");
+                  document.write(str.indexOf("e",10));
+                  document.write("<br/>");
+                  document.write(str.indexOf("are"));//18
+                  document.write("<br/>");
+                  document.write(str.indexOf("z"));
+                  document.write("<hr/>");
+                  /*The search() method searches a string for a specified value,
+                   and returns the position of the match. The search 
+                  value can be string or a regular expression. 
+                  This method returns -1 if no match is found.*/
+                  var str="Hello friends how are you";
+document.write(str.search("e"));
+document.write("<br/>");
+document.write(str.search("Lets"));//becouse of Lets is not present.
+document.write("<br/>");
+document.write(str.search("you"));
+//show first occurance only
+            </script>
+        </body>
+    </head>
+</html>

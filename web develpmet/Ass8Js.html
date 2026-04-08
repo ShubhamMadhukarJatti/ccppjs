@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                var stu=["Rahul","Raj"];
+                document.write(stu+"<br/>");
+                document.write(typeof(stu));
+document.write("<br/>");
+              var arr=[];//empty array
+              arr[0]="Rahul";
+              arr[1]="Ram";
+              arr[2]=56;
+              arr[3]="Jay";
+              document.write(arr); 
+             // console.log(arr); */
+             document.write("<br/>");
+
+             var array=["Rahul","Ram",56,"Jay"];
+             document.write(array);
+             document.write("<br/>");
+
+    var a=10,b=20,c=30;
+    var arr=[a,b,c];
+    document.write(arr);
+    document.write("<br/>");
+
+    var arr=new Array("Rahul","Ram",56,"Jay");
+    document.write(arr[2]);
+    document.write("<br/>");
+
+var arr=new Array(10);//constructor method
+var arr1=[10];//Literall method
+
+document.write(arr+"<br/>");
+document.write(arr1);
+document.write("<br/>");
+
+var arr=[];
+arr[0]="Rahul";
+arr[1]="Ram";
+arr[3]=56;
+arr[4]="Jay";
+arr[5]="Extra";
+document.write(arr);
+document.write("<br/>");
+document.write("<br/>");
+
+var a=["Rahul","Ram",56,"Jay"];
+document.write(a+"<br>");
+a[1]="shubham";
+document.write(a+"<br>");
+document.write("<br/>");
+
+var a=["Rahul","Ram",56,"Jay"];
+var b=a;
+document.write(b+"<br>");
+document.write(a+"<br>");
+b[0]="sonu";
+document.write(a+"<br>");
+document.write(b+"<br>");
+document.write("<br/>");
+
+var a=["Rahul","Ram",56,"Jay"];
+document.write(a+"<br>");
+document.write("Length :"+a.lenght+"<br>");
+delete a[0];
+document.write(a+"<br>");
+document.write("Lenght :"+a.lenght+"<br>");
+document.write(a[0]+"<br>");
+document.write("<br/>");
+
+var a=["Rahul","Ram",56,"Jay"];
+for(let i=0;i<=3;i++){
+    document.write(a[i]+"<br>");
+}
+document.write("<hr/>");
+/*In case if you dont know array lenght use 
+lenght property with for loop*/
+for(let i=0;i<a.lenght;i++){
+    document.write(a[i]+"<br>");
+}
+document.write("<br/>");
+
+var a=["Rahul","ram",56,"Jay"];
+a.forEach(function(index,value){
+    document.write(index+" "+value+"<br>");
+});
+document.write("<br/>");
+
+var a=["Rahul","Ram",56,"Jay"];
+for(let c of a){
+    document.write(c+"<br/>");
+}
+
+            </script>
+        </body>
+    </head>
+</html>

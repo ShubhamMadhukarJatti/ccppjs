@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                var Mobile=function(model_no){
+                    //Instance Member
+                    this.model=model_no;
+                    this.price=3000;
+                };
+                var samsung=new Mobile('Galaxy');
+                var nokia=new Mobile('3310');
+               /*classname.prototype.key='value';
+                prototype Member*/
+                Mobile.prototype.color='white';
+                samsung.color="white";
+               nokia.color="white";
+                document.write(samsung.color);
+            samsung.ram=256;
+            console.log(samsung);
+                console.log(nokia);
+             document.write(Object.keys(samsung));
+            </script>
+        </body>
+    </head>
+</html>

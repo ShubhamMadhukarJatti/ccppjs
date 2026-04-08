@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script type="text/javascript">
+            var obj={
+                foo:'This is the value of foo',
+                getFoo:function(){
+                    return this.foo;
+                },
+                setFoo:function(val){
+                    this.foo=val;
+                    //this.val;
+                }
+            }
+          //  console.log(obj.getFoo());
+            //this is the value of Foo
+            obj.setFoo('Hello');
+
+            console.log(obj.getFoo());
+            </script>
+        </body>
+    </head>
+</html>

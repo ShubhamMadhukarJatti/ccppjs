@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <script>
+            function Amstrong(){
+                var flag,number,remainder,addition=0;
+                number=Number(document.getElementById("N").value);
+
+                flag=number;
+                while(number>0){
+                    remainder=number%10;
+                    addition=addition+remainder*remainder*remainder;
+                    number=parseInt(number/10);
+                }
+                if(addition==flag){
+                    window.alert("The inputed number is amstrong");
+                }else{
+                    window.alert("The inputed number is not amstrong");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <h1>Whether they number amstrong or not</h1>
+        Enter the Number:<input type="text" name="n" id="N"/>
+        <hr color="cyan">
+        <br>
+        <center><button onClick="Amstrong()">CHECK</button>
+    </body>
+</htmL>

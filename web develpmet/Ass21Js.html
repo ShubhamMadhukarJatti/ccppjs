@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            <title>Verifiction of vaild password</title>
+<!--Q1.Wirte Js function to check whether a given value of password is strong 
+                or not using R.E-->
+        
+            </head>
+            <script>
+                function verifyPassword(){
+                    var pw=document.getElementById("pswd").value;
+                    //check empty password field
+                    if(pw==""){
+                        document.getElementById("message").innerHTML="**Fill the Password Please!";
+                        return false;
+                    }
+                    //minimum password length validetion
+                    if(pw.length<8){
+                        document.getElementBYId("message").innerHTML="**Password length must be atleast 8 charchters,";
+return false;
+                    }
+//maximum length of password validtion
+if(pw.length>15){
+    document.getElementById("message").innerHTML="**password length must not exceed 15 charecters";
+    return false;
+}else{
+    alert("Password is correct");
+}
+}
+
+            </script>
+            <body>
+                <center>
+                    <h1 style="color:green">Javapoint</h1>
+                    <h3>Verify valid password Example</h3>
+                    <form onsubmit="return verifyPassword()">
+                <!--Enetr Password-->
+                <td>Enter Password</td>
+<input type="Password"id="pswd"value="">
+<span id="message"style="color:red"></span><br>
+<br>
+
+<!--Click to verify valid password-->
+<input type="submit"value="Submit">
+
+<!--Click to rest fields-->
+<button type="rest"value="Reset">Reset</button>
+            </form>
+                </center>
+            </body>
+ </html>               
+    

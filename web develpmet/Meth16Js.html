@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+               var fees={ };//Declaring empty object 
+                fees['Rahul']=100;//initia;izing
+                fees['Sumit']=200;
+                fees['Rohan']=300;
+/*
+                fees.Rahul=100;
+                fees.Sumit=200;
+                fees.Rohan=300;
+*/
+                document.write(fees['Sumit']);
+                document.write("<hr>");
+var fees={ };
+fees['Rahul']=100;
+fees['total']=function(){return(100+200+300);};
+//fees.total=function(){return(100+200+300);};
+document.write(fees.total());
+
+document.write("<hr>");
+var fees={Rahul:100,Sumit:200,Rohan:300};
+document.write(fees['Rahul']);
+
+document.write("<hr>");
+var fees={Rahul:100,Sumit:200,Rohan:300,total:
+function(){return(100+200+300)}};
+document.write(fees.total());
+
+document.write("<hr>");
+var fees=new Object();
+fees['Rahul']=100;
+fees['Sumit']=200;
+fees['Rohan']=300;
+
+document.write(fees['Rahul']);
+
+document.write("<hr>");
+var fees=new Object();
+fees['Rahul']=100;
+fees['Sumit']=200;
+fees['Rohan']=300;
+fees['total']=function(){return(100+200+300);};
+document.write(fees.total());
+
+document.write("<hr>");
+var fees={Rahul:100,Sumit:200,Rohan:300};
+document.write(fees['Rahul']+"<br>");
+document.write(fees["Sumit"]+"<br>");
+document.write(fees.Rohan);
+
+document.write("<hr>");
+var fees={Rahul:100,"Super Man":400};
+document.write(fees['Super Man']+"<br>");
+document.write(fees["Super Man"]+"<br>");
+//document.write(fees.Super Man);//we cannot access multiword key by not notation
+
+document.write("<hr>");
+var fees={
+    Rahul:100,
+    Sumit:200,
+    Rohan:300,
+    total:function(){return(100+200+300);}
+};
+document.write(fees.total()+"<br>");
+document.write(fees['total']());
+            </script>
+        </body>
+    </head>
+</html>

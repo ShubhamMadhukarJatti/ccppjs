@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+ class Father{
+showFMoney(){
+return "Father Money <br>";
+   }
+}
+class Son extends Father{
+    showSMoney(){
+        return "son Money <br>";
+    }
+}
+class GrandSon extends Son{
+    showGMoney(){
+        return "GrandSon Money";
+    }
+}
+var t=new GrandSon();
+document.write(t.showFMoney());
+document.write(t.showSMoney());
+document.write(t.showGMoney());
+
+//var u=new GrandSon();
+//document.write(u.showGMoney());
+            </script>
+        </body>
+    </head>
+</html>

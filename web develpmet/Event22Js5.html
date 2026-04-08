@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>Add Event Listener</h1>
+            <button id="mybtn">Click Me</button>
+<script>
+    function disp1(){
+        alert("Button Clicked 1");
+    }
+    var btn=document.getElementById("mybtn");
+   // btn.addEventListener("click",disp1,false);
+    btn.addEventListener("click",disp1,true);
+    btn.removeEventListener("click",disp1,true);
+</script>
+        </body>
+    </head>
+</html>

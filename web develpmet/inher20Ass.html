@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                //Q1.create Employee class.crete object of that assign common properties n display them.
+                class Emp{
+                    showEmp(){
+                        return "Emp id=111<br>";
+                }
+            }
+         class Emp1 extends Emp{
+             showEmp1(){
+                 return "Emp id=222<br>";
+             }
+         }
+         class Emp2 extends Emp1{
+             showEmp2(){
+                 return "Emp id=333<br>";
+             }
+         }
+       var n=new Emp2();
+       document.write(n.showEmp());
+       document.write(n.showEmp1());
+       document.write(n.showEmp2());
+
+            </script>
+        </body>
+    </head>
+</html>

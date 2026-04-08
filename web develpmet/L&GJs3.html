@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+               let a=3;
+               if(true){
+                   var i=20;//accessible from anywhere
+                   document.write(i+"<br>");
+               } 
+               //in other programming i is not accessible outside block
+               //but in javascript it is accessible
+               document.write(i+"<br>");//i accessible outside block
+
+               if(true){
+                   let j=30;//only accessible within block 
+                   //document.write(j+"<br>");
+               }
+//when we declear varible with let
+//it is only accessible within block
+//document.write(j+"<br>");//j not accessible
+
+let b=6;
+//document.write(b);
+for(let c=1;c<=10;c++){
+    document.write(c+"<br/>");
+}
+//document.write(c+"<br/>");
+            </script>
+        </body>
+    </head>
+</html>

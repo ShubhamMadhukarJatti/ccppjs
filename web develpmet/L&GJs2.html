@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+//accessible from anywhere
+const i="I am global Variable changed";
+//Global Variable
+//i="Hello";
+function show(){
+    var j="I am Local Varible";//Local Variable
+    document.write(i+"<br>");//i accessible in function
+document.write(j+"<br>");//j accessible in function
+}
+show();
+//const i= "Changing value of i";
+document.write(i+"<br>");//i accessible outside
+//document.write(j+"<br>");//j not accessible outside
+function disp(){
+    document.write(i+"<br>");//i accessible in function
+   // document.write(j+"<br>");//j not accessible in other function
+}
+disp();
+if(true){
+    var d=12;
+    document.write(i+"<br>");//accessible in block
+    //document.write(j+"<br>");//j not accessible in block
+    document.write(d+"<br/>");
+}
+//document.write(d);
+            </script>
+        </body>
+    </head>
+</html>

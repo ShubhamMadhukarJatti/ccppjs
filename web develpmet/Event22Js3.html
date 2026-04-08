@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>Add Event Listener</h1>
+        <button id="mybtn">Click Me</button>
+        <script>
+            function show(){
+                alert("Button Clicked");
+            }
+            var btn=document.getElementById("mybtn");
+          btn.addEventListener("click",function(){alert("Button Clicked 11");});
+            btn.addEventListener("click",show);
+        </script>
+        </body>
+    </head>
+</html>

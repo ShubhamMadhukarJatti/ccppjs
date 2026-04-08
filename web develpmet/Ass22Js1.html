@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            /*Q2.Write a Js function that takes two argument,start and end & returns an array
+            containning all the number from start up to end (including end value)*/
+           function range(start,end,increment){
+                var result=[];
+                if(increment ==undefined)
+                increment =1;
+                numLoops=Math.abs((end-start)/increment)+1;
+                for(var i=0;i<numLoops;i++){
+                    result.push(start);
+                    start+=increment;
+                }
+                return result;
+            }
+            function sum(numArray){
+                var arrayTotal=0;
+                numLoop=numArray.length;
+                for(var i=0;i<numLoop;i++){
+                    arrayTotal +=numArray[i];
+                }
+                return arrayTotal;
+            }
+            console.log(range(1,10));
+            console.log(range(5,2,-1));
+            console.log(sum(range(1,10)));
+         /*   function range(start,end,increment){
+              var result=[];
+              if(increment==undefined)
+              increment =1;
+                  numLoop=Math.abs((end-start)/increment)+1;
+                  for(var i=0;i<numLoops;i++){
+                      result.push(start);
+                      start +=increment;
+}
+return result;
+              }
+              function sum(numArray){
+                  var arrayTotal=0;
+                  numLoop=numArray.length;
+                  for(var i=0;i<numLoops;i++){
+                      arrayTotal +=numArray[i];
+                  }
+                  return arrayTotal;
+              }
+              console.log(range(1,10));
+              console.log(range(5,2,-1));
+              console.log(sum(range(1,10)));*/
+            
+            </script>
+        </body>
+    </head>
+</html>

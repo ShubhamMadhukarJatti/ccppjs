@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //Q2.Add two array var a=[10,20,30] var b=[40,50,60]
+            //Q3.Find second larget number from a array var arr=[31,29,41,91,11]
+        function Arrays_sum(array1,array2)
+        {
+            var result=[];
+            var ctr=0;
+            var x=0;
+            
+            if(array1.length===0)
+            return "array1 is empty";
+            if(array2.length===0)
+            return "array2 is empty";
+
+            while(ctr<array1.length && ctr<array2.length)
+            {
+            result.push(array1[ctr]+array2[ctr]);
+                ctr++;
+            }
+            if(ctr===array1.length){
+                for(x=ctr;x<array2.length;x++)
+                {
+                 result.push(array2[x]);
+            }
+        }
+        else{
+            for(x=ctr;x<array1.length;x++){
+                result.push(array1[x]);
+            }
+        }
+        return result;
+    }
+    console.log(Arrays_sum([10,20,30],[40,50,60]));
+        </script>
+    </body>
+</html>
